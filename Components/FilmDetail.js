@@ -152,19 +152,20 @@ class FilmDetail extends React.Component {
           </TouchableOpacity>
           <Text style={styles.description_text}>{film.overview}</Text>
           <Text style={styles.default_text}>
-            Sorti le {moment(new Date(film.release_date)).format("DD/MM/YYYY")}
+            Out on the{" "}
+            {moment(new Date(film.release_date)).format("DD/MM/YYYY")}
           </Text>
           <Text style={styles.default_text}>
             Note : {film.vote_average} / 10
           </Text>
           <Text style={styles.default_text}>
-            Nombre de votes : {film.vote_count}
+            Number of votes : {film.vote_count}
           </Text>
           <Text style={styles.default_text}>
             Budget : {numeral(film.budget).format("0,0[.]00 $")}
           </Text>
           <Text style={styles.default_text}>
-            Genre(s) :{" "}
+            Categorie(s) :{" "}
             {film.genres
               .map(function (genre) {
                 return genre.name;

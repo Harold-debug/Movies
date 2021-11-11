@@ -1,5 +1,3 @@
-// Components/Favorites.js
-
 import React from "react";
 import { StyleSheet, Text } from "react-native";
 import FilmList from "./FilmList";
